@@ -4,33 +4,68 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <div className="min-h-screen bg-neutral-700
-    flex flex-col items-center justify-center text-center">
-      <div className="flex items-center justify-center space-x-8 mb-12">
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="w-24 h-24" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="w-24 h-24 animate-spin" alt="React logo" style={{ animationDuration: "5s"}} />
-        </a>
-      </div>
-      <h1 className="text-white text-6xl font-bold mb-16">Vite + React</h1>
-      <div className="text-sm space-y-6 mb-8">
-        <button onClick={() => setCount((count) => count + 1)}
-          className= "bg-neutral-900 text-white py-2 px-6 rounded-lg text-lg">
-          count is {count}
-        </button>
-        <p className="text-neutral-400">
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="text-neutral-300">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+        <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden w-full max-w-4xl">
+          
+          {/* Bagian kiri (gambar placeholder) -> hilang di HP */}
+          <div className="hidden md:flex md:w-1/2 items-center justify-center bg-gray-300">
+            <span className="text-gray-600 text-2xl">600 × 500</span>
+          </div>
+          
+          {/* Bagian kanan (form login) */}
+          <div className="w-full md:w-1/2 p-8">
+            <h2 className="text-2xl font-semibold text-center mb-6">Login</h2>
+            
+            <form>
+              {/* Email */}
+              <div className="mb-4">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Masukkan email"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md 
+                             shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 
+                             focus:border-blue-500 sm:text-sm"
+                />
+              </div>
+
+              {/* Password */}
+              <div className="mb-4">
+                <label
+                  htmlFor="password"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Password
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Masukkan password"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md 
+                             shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 
+                             focus:border-blue-500 sm:text-sm"
+                />
+              </div>
+
+              {/* Tombol Login */}
+              <button
+                type="submit"
+                className="w-full py-2 px-4 bg-blue-600 text-white font-semibold rounded-md 
+                           hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </>
   )
