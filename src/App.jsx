@@ -19,61 +19,61 @@ function App() {
 
         LATIHAN 2
         <div className="p-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-  {/* Aturan: grid, 2 kolom (default), 3 kolom (md), 4 kolom (lg), ada jarak (gap-4) */}
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 1"
-    className="h-48 w-full object-cover" // h-48 = 192px (mendekati 200px)
-  />
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 2"
-    className="h-48 w-full object-cover"
-  />
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 3"
-    className="h-48 w-full object-cover"
-  />
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 4"
-    className="h-48 w-full object-cover"
-  />
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 5"
-    className="h-48 w-full object-cover"
-  />
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 6"
-    className="h-48 w-full object-cover"
-  />
-</div>
-{/* <hr /> <-- Jika kamu ingin menambahkan garis, letakkan di sini */}
+          <img
+            src="https://www.placehold.co/200x200"
+            alt="Gambar Galeri 1"
+            className="h-48 w-full object-cover" 
+          />
+          <img
+            src="https://www.placehold.co/200x200"
+            alt="Gambar Galeri 2"
+            className="h-48 w-full object-cover"
+          />
+          <img
+            src="https://www.placehold.co/200x200"
+            alt="Gambar Galeri 3"
+            className="h-48 w-full object-cover"
+          />
+          <img
+            src="https://www.placehold.co/200x200"
+            alt="Gambar Galeri 4"
+            className="h-48 w-full object-cover"
+          />
+          <img
+            src="https://www.placehold.co/200x200"
+            alt="Gambar Galeri 5"
+            className="h-48 w-full object-cover"
+          />
+          <img
+            src="https://www.placehold.co/200x200"
+            alt="Gambar Galeri 6"
+            className="h-48 w-full object-cover"
+          />
+        </div>
 
         {/* LATIHAN 3 - PRICING TABLE */}
         LATIHAN 3
-        <div className="p-4 text-center">
-          <div className="bg-gray-200 p-6 rounded">
-            Basic
-            <br />
-            Rp 50.000
-          </div>
-          <div className="bg-gray-200 p-6 rounded">
-            Pro
-            <br />
-            Rp 100.000
-          </div>
-          <div className="bg-gray-200 p-6 rounded">
-            Premium
-            <br />
-            Rp 200.000
+        <div> 
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-1">
+            
+            <div className="bg-gray-200 p-4 text-center shadow-md">
+              <div className="font-bold text-base">Basic</div>
+              <div className="mt-1 text-sm font-normal">Rp 50.000</div>
+            </div>
+            
+            <div className="bg-blue-200 p-6 text-center shadow-lg relative z-10">
+              <div className="font-bold text-base">Pro</div>
+              <div className="mt-1 text-sm font-normal">Rp 100.000</div>
+            </div>
+            
+            <div className="bg-gray-200 p-4 text-center shadow-md">
+              <div className="font-bold text-base">Premium</div>
+              <div className="mt-1 text-sm font-normal">Rp 200.000</div>
+            </div>
           </div>
         </div>
         <hr />
-        {/* LATIHAN 4 - DASHBOARD LAYOUT */}
+{/* LATIHAN 4 - DASHBOARD LAYOUT */}
         LATIHAN 4
         <div className="min-h-screen">
           <header className="bg-gray-300 p-4">Header</header>
