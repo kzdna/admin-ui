@@ -94,7 +94,7 @@ function App() {
       </div>
       <hr/>
 {/* LATIHAN 5 - CARD PRODUCT */}
-        LATIHAN 5
+ LATIHAN 5
         <div className="p-4 border border-gray-300 bg-white 
               flex flex-col md:flex-row 
               items-center md:items-start 
@@ -113,4 +113,5 @@ function App() {
   );
 }
 
+       
 export default App;
