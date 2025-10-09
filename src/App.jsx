@@ -95,14 +95,16 @@ function App() {
       <hr/>
 {/* LATIHAN 5 - CARD PRODUCT */}
         LATIHAN 5
-        <div className="p-4 border">
+        <div className="p-4 border border-gray-300 bg-white 
+              flex flex-col md:flex-row 
+              items-center md:items-start 
+              space-y-3 md:space-y-0 md:space-x-4 max-w-full">
           <img
-            src="https://www.placehold.co/80x80"
-            alt="Gambar Produk"
-            className="h-20 w-20"
-          />
-          <div>
-            <h3 className="font-bold">Nama Produk</h3>
+          src="https://www.placehold.co/80x80"
+          alt="Gambar Produk"
+          className="h-20 w-20 flex-shrink-0 object-cover"/>
+          <div className="text-center md:text-left">
+            <h3 className="font-bold text-gray-800">Nama Produk</h3>
             <p className="text-sm text-gray-600">Deskripsi produk singkat...</p>
           </div>
         </div>
