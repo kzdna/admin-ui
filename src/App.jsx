@@ -74,15 +74,26 @@ function App() {
         </div>
         <hr />
 {/* LATIHAN 4 - DASHBOARD LAYOUT */}
-        LATIHAN 4
-        <div className="min-h-screen">
-          <header className="bg-gray-300 p-4">Header</header>
-          <aside className="bg-gray-200 p-4">Sidebar</aside>
-          <main className="bg-white p-4 border">Content</main>
-          <footer className="bg-gray-300 p-4">Footer</footer>
-        </div>
-        <hr />
-        {/* LATIHAN 5 - CARD PRODUCT */}
+      LATIHAN 4
+      <div className="min-h-screen grid grid-cols-1 md:grid-cols-12 md:gap-0 border border-gray-300"> 
+        <header className="bg-gray-300 p-6 col-span-12 text-gray-800">
+          Header
+        </header>
+
+        <aside className="bg-gray-200 p-6 col-span-12 md:col-span-3 h-fit md:h-full text-gray-800">
+          Sidebar
+        </aside>
+
+        <main className="bg-white p-4 border border-gray-400 col-span-12 md:col-span-9 flex-grow">
+          Content
+        </main>
+        
+        <footer className="bg-gray-300 p-6 col-span-12 text-gray-800">
+          Footer
+        </footer>
+      </div>
+      <hr/>
+{/* LATIHAN 5 - CARD PRODUCT */}
         LATIHAN 5
         <div className="p-4 border">
           <img
