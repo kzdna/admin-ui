@@ -18,39 +18,41 @@ function App() {
         <hr className="my-8 border-t-2 border-gray-200" />
 
         LATIHAN 2
-        <div className="p-4">
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-        </div>
-        <hr />
+        <div className="p-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+  {/* Aturan: grid, 2 kolom (default), 3 kolom (md), 4 kolom (lg), ada jarak (gap-4) */}
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 1"
+    className="h-48 w-full object-cover" // h-48 = 192px (mendekati 200px)
+  />
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 2"
+    className="h-48 w-full object-cover"
+  />
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 3"
+    className="h-48 w-full object-cover"
+  />
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 4"
+    className="h-48 w-full object-cover"
+  />
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 5"
+    className="h-48 w-full object-cover"
+  />
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 6"
+    className="h-48 w-full object-cover"
+  />
+</div>
+{/* <hr /> <-- Jika kamu ingin menambahkan garis, letakkan di sini */}
+
         {/* LATIHAN 3 - PRICING TABLE */}
         LATIHAN 3
         <div className="p-4 text-center">
